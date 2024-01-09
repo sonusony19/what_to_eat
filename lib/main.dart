@@ -15,7 +15,17 @@ class ThisApplication extends StatelessWidget {
     return MaterialApp(
       title: "What to Eat",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.orange),
+      theme: ThemeData(
+          primarySwatch: Colors.blue,
+        textTheme: const TextTheme(
+          displayLarge: TextStyle(
+              color: Colors.black,
+              fontSize: 18,
+              fontFamily: "InterTight",
+              fontWeight: FontWeight.bold
+          ),
+        )
+      ),
       home: const SplashActivity(),
     );
   }
